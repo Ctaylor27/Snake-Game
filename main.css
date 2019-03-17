@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'helvetica';
+  background: #320a28;
+  color: #e0d68a;
+}
+
+canvas {
+  margin: 25px 0 15px 0;
+  border: 1px solid black;
+  background: black;
+  z-index: 1;
+}
+
+button {
+  height: 60px;
+  width: 155px;
+  font-size: 20px;
+  background: #320a28;
+  border: 1px solid #8e443d;
+  color: #8e443d;
+  transition: color .15s, background .15s, border .15s;
+
+}
+
+.active, button:hover {
+  color: #e0d68a;
+  background: #8e443d;
+  border: 1px solid #e0d68a;
+  outline: 0;
+}
+
+button::-moz-focus-inner,
+.active::-moz-focus-inner {
+    padding: 0;
+}
+
+button#start {
+  z-index: 100;
+  position: absolute;
+  display: block;
+}
